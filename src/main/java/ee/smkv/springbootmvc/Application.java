@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource("config.properties")
+@PropertySource(value = "config.properties" ,factory = EnvironmentBasedPropertySourceFactory.class )
 public class Application {
 
 
